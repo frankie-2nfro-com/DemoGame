@@ -3,6 +3,7 @@ import cv2
 
 class HomeScene(GameScene):
 	def setup(self):
+		self.elements["BG"] = {"type":"jpg", "file":"./assets/images/intro_bg.jpg", "x":0, "y":0, "w":1280, "h":720}
 		self.elements["KEY_FUNCTION"] = {"type":"text", "message":"Home: Press 'p' to play", "x":30, "y":690, "font":cv2.FONT_HERSHEY_TRIPLEX, "size":1, "color":(255, 255, 255), "thickness":2}
 			
 	def reset(self):
